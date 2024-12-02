@@ -1,0 +1,12 @@
+{
+    "ethereum": {
+        "test-1": {
+            "name": "Project Name",
+            "date": "2024-12-31",
+            "supply": "1,000",
+            "early": true,
+            "link": "#",
+            "list": "0.0 ETH"
+        }
+    }
+}

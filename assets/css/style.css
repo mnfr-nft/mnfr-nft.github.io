@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Jura";
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+button {
+    background: var(--text);
+    color: var(--solid);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: padding 0.5s;
+    border: 2px solid var(--text);
+}
+
+.but {
+    background: none;
+    color: var(--text);
+}
+
+button:hover {
+    padding: 0.75rem 2.5rem;
+    cursor: pointer;
+}
+
+:root {
+    --bg: #f8f9fa;
+    --solid: #fff;
+    --text: #111;
+}
+
+body {
+    background: var(--bg);
+}
+
+.art {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.art svg {
+    width: 25%;
+}
+
+.box {
+    background: var(--solid);
+    border-radius: 15px;
+    box-shadow: 0 0 5px 1px rgb(0, 0, 0, 0.1), 0 0 10px 2px rgb(0, 0, 0, 0.01);
+}
+
+.dapp {
+    gap: 1rem;
+    display: none;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.content {
+    width: 95%;
+    height: 100%;
+    display: flex;
+
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.navi {
+    width: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navi > div:first-child {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+ 
+.navi > div:last-child {
+    height: 10%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.content section {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.content header { 
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5%;
+}
+
+.content section .landing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    height: 50%;
+}
+
+.landing article {
+    grid-column: span 2;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.landing article > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 60%;
+}
+
+.landing article > div:last-child {
+    display: flex;
+    gap: 1rem;
+}
+
+.landing > div {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.landing > div > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    height: 50%;
+}
+
+
+.nft {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    transition: transform 0.5s, opacity 0.5s;
+
+    text-transform: uppercase;
+}
+
+.nft:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+    animation: none;
+}
+
+.today {
+    
+    animation: today 2s infinite;
+}
+
+.old-one {
+    filter: grayscale();
+    opacity: 0.5;
+}   
+
+.old-one:hover {
+    opacity: 1;
+}
+
+@keyframes today {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.25;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+.nft img {
+    width: 100%;
+    border-radius: 15px 5px 15px 15px;
+}
+
+.nft article {
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.nft > div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    z-index: 1;
+}
+
+.nft article ul {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    padding: 0.5rem 0.5rem 0 0;
+
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    align-items: flex-end;
+}
+
+.nft article span {
+    background-color: var(--bg);
+    width: 35%;
+    justify-content: center;
+
+    height: 10%;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    border-radius: 15px 5px 5px 15px;
+
+    display: flex;
+    align-items: center;
+}
+
+.nft h4 {
+    position: absolute;
+    bottom: -10%;
+    background: var(--solid);
+    border-radius: 15px;
+    width: 85%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nft > div:first-child {
+    display: flex;
+}
+
+
+
+@media (max-width: 1500px) {
+    section .row {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
