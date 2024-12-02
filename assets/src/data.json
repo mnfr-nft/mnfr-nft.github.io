@@ -1,12 +1,40 @@
 {
-    "ethereum": {
-        "test-1": {
-            "name": "Project Name",
-            "date": "2024-12-31",
-            "supply": "1,000",
+    "solana": {
+        "veneti-cabal": {
+            "name": "Veneti Cabal",
+            "date": "2024-12-05",
+            "supply": "800",
             "early": true,
-            "link": "#",
-            "list": "0.0 ETH"
+            "link": "https://x.com/Veneticabal",
+            "list": "N / A"
         }
+    },
+    "ordinals": {
+        "Cura": {
+            "name": "Cura",
+            "date": "2024-12-05",
+            "supply": "100",
+            "early": false,
+            "link": "https://x.com/OrdinalsCura",
+            "list": "0.0002 BTC"
+        }
+    },
+    "ape chain": {
+        "boozy": {
+            "name": "Boozy",
+            "date": "2024-12-02",
+            "supply": "5,000",
+            "early": true,
+            "link": "https://x.com/BoozyNFTs",
+            "list": "10 APE"
+        },
+        "funky-frogs": {
+            "name": "Funky Frogs Club",
+            "date": "2024-12-03",
+            "supply": "2,222",
+            "early": true,
+            "link": "https://x.com/funkyfrogclub",
+            "list": "3 APE"
+        }   
     }
 }
