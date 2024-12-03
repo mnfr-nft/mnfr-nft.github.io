@@ -2,7 +2,7 @@
     "solana": {
         "veneti-cabal": {
             "name": "Veneti Cabal",
-            "date": "2024-12-05",
+            "date": "2024-12-03",
             "supply": "800",
             "early": true,
             "link": "https://x.com/Veneticabal",
@@ -35,6 +35,14 @@
             "early": true,
             "link": "https://x.com/funkyfrogclub",
             "list": "3 APE"
-        }   
+        },
+        "ape-bara": {
+            "name": "ApeBara",
+            "date": "2024-12-05",
+            "supply": "2,222",
+            "early": true,
+            "link": "https://x.com/apebara1",
+            "list": "8 APE"
+        } 
     }
 }

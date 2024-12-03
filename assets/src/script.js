@@ -32,7 +32,7 @@ addEventListener('DOMContentLoaded', () => {
                     const release = new Date(metadata.date);
 
                     const offset = new Date(release);
-                    offset.setDate(release.getDate() + 1);
+                    offset.setDate(release.getDate() + 2);
 
                     if (offset > currentDate) {
 
